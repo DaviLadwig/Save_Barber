@@ -1,73 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaveBarber</title>
+    <title>Don Alberto - barbearia</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <img src="" alt="">
-            <button>Agendar horário</button>
-        </nav>
+    <header class="header">
+        <div class="container">
+
+            <div class="logo">
+                <img src="img/logo-donalbertp.png" alt="Don Alberto Barbearia">
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="btn-agendar">Agendar</a>
+
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+
+        </div>
     </header>
 
-    <!--SECTION HERO-->
-    <section>
-        <div>
-            <div>
-                <h1>Bem vindo a Save barber</h1>
-                <h4>Um ligar onde você sai transfromado em um novo homem</h4>
-                <video src=""></video>
-            </div>
+    <!--SEÇÃO HERO-->
+    <section class="hero">
 
-            <div>
-                <span>Agende seu horário</span>
-                <button>whatsapp</button>
-            </div>
+        <!-- VIDEO DESKTOP -->
+        <video class="hero-video desktop-video" autoplay muted loop playsinline>
+            <source src="video/vid-desk.mp4" type="video/mp4">
+        </video>
+
+        <!-- VIDEO MOBILE -->
+        <video class="hero-video mobile-video" autoplay muted loop playsinline>
+            <source src="video/vid-mob.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1>Don Alberto</h1>
+
+            <p>
+                Tradição, estilo e precisão em cada corte.
+            </p>
+
+            <a href="#" class="btn-primary">Agendar Horário</a>
         </div>
+
     </section>
 
-    <!--SECTION AMBIENTE-->
-    <section>
-        <div>
-            <div>
-                <h2>Conheça um pouco do nosso ambiente</h2>
+
+    <!--SECTION SOBRE A BARBEARIA-->
+    <section class="sobre" id="sobre">
+
+        <div class="container-sobre">
+
+            <div class="sobre-img">
+                <img src="img/796dce6351e543bf8ed2b0271dcdb0-studio-jh-barbearia-biz-photo-b2fa1e705eba49afbbeb38248c558f-booksy.jpeg"
+                    alt="Barbearia Don Alberto">
             </div>
 
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="sobre-texto">
+
+                <h2>Sobre a Don Alberto</h2>
+
+                <p>
+                    Na Don Alberto, tradição e estilo se encontram para oferecer uma experiência única.
+                    Nossa barbearia combina técnicas clássicas com um ambiente moderno, garantindo
+                    cortes precisos e atendimento de alto padrão.
+                </p>
+
+                <ul class="sobre-lista">
+                    <li>✔ Profissionais experientes</li>
+                    <li>✔ Ambiente confortável e sofisticado</li>
+                    <li>✔ Produtos profissionais</li>
+                </ul>
+
+                <a href="#" class="btn-primary">Agendar Horário</a>
+
             </div>
+
         </div>
+
     </section>
 
-    <!--SECTION FOTO CLIENTES E CORTES-->
-    <section>
-        <div>
-            <div>
-                <h2>Qualidade de corte garantida e aprovada por nossos clientes</h2>
+    <!--SECTION DE SERVIÇOS-->
+    <section class="servicos" id="servicos">
+
+        <div class="container-servicos">
+
+            <h2>Nossos Serviços</h2>
+
+            <div class="servicos-grid">
+
+                <div class="servico-card">
+
+                    <div class="servico-img">
+                        <img src="img/corte.jpg" alt="Corte de cabelo">
+                    </div>
+
+                    <div class="servico-info">
+                        <h3>Corte Clássico</h3>
+                        <p>Corte moderno ou tradicional com acabamento perfeito.</p>
+                        <span class="preco">R$35</span>
+                        <a href="#" class="btn-servico">Agendar</a>
+                    </div>
+
+                </div>
+
+
+                <div class="servico-card">
+
+                    <div class="servico-img">
+                        <img src="img/barba.jpg" alt="Barba">
+                    </div>
+
+                    <div class="servico-info">
+                        <h3>Barba Completa</h3>
+                        <p>Modelagem de barba com navalha e toalha quente.</p>
+                        <span class="preco">R$25</span>
+                        <a href="#" class="btn-servico">Agendar</a>
+                    </div>
+
+                </div>
+
+
+                <div class="servico-card">
+
+                    <div class="servico-img">
+                        <img src="img/corte-barba.jpg" alt="Corte e barba">
+                    </div>
+
+                    <div class="servico-info">
+                        <h3>Corte + Barba</h3>
+                        <p>Experiência completa para um visual impecável.</p>
+                        <span class="preco">R$55</span>
+                        <a href="#" class="btn-servico">Agendar</a>
+                    </div>
+
+                </div>
+
+
+                <div class="servico-card">
+
+                    <div class="servico-img">
+                        <img src="img/acabamento.jpg" alt="Acabamento">
+                    </div>
+
+                    <div class="servico-info">
+                        <h3>Acabamento</h3>
+                        <p>Contorno, pezinho e detalhes rápidos.</p>
+                        <span class="preco">R$15</span>
+                        <a href="#" class="btn-servico">Agendar</a>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
         </div>
-    </section>
 
-    <footer>
-        <p>Todos os diretos reservados - Save Bareber</p>
-    </footer>
+    </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,62 @@
+.sobre {
+    background: #111;
+    color: white;
+    padding: 100px 0;
+}
+
+.container-sobre {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.sobre-img {
+    flex: 1;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+}
+
+.sobre-texto p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.sobre-lista {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.sobre-lista li {
+    margin-bottom: 10px;
+    color: #c59d5f;
+}
+
+@media (max-width:900px) {
+
+    .container-sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-texto h2 {
+        font-size: 32px;
+    }
+
+}

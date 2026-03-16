@@ -1,0 +1,105 @@
+.servicos {
+    background: #0d0d0d;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.container-servicos {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.servicos h2 {
+    font-size: 42px;
+    margin-bottom: 60px;
+    font-family: "Playfair Display", serif;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.servico-card {
+    background: #161616;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.servico-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.servico-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.servico-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.servico-card:hover img {
+    transform: scale(1.1);
+}
+
+.servico-info {
+    padding: 25px;
+}
+
+.servico-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.servico-info p {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.preco {
+    display: block;
+    font-size: 20px;
+    color: #c59d5f;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.btn-servico {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #c59d5f;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-servico:hover {
+    background: #a67c3f;
+}
+
+@media (max-width:900px) {
+
+    .servicos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
