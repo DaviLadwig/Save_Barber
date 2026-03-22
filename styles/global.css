@@ -10,3 +10,8 @@
 body {
     font-family: "Roboto Slab", serif;
 }
+
+
+html{
+    scroll-behavior: smooth;
+}
